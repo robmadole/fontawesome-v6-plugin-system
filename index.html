@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Font Awesome plugins example</title>
+
+    <!-- This file is build with `npm run build.fontawesome` -->
+    <script src="/dist/fontawesome.js"></script>
+
+    <!-- A normal install of Font Awesome my load this file instead, but we the dist/fontawesome.js replaces it and is smaller -->
+    <!-- <script src="/node_modules/@fortawesome/fontawesome-pro/js/fontawesome.min.js"></script> -->
+
+    <!-- We can load icon styles as we normally would, through external resources -->
+    <script src="/node_modules/@fortawesome/fontawesome-pro/js/brands.min.js"></script>
+
+    <!-- Here we import the SVG-specific stylesheet directly. This is necessary -->
+    <!-- because we aren't going to let the JavaScript library insert a <style> -->
+    <!-- element into the <head> (this plugin was not included in the dist/fontawesome.js file) -->
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-pro/css/svg-with-js.css" />
+
+  </head>
+  <body>
+    <i class="fa-brands fa-twitter"></i>
+  </body>
+</html>

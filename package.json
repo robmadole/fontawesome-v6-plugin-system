@@ -4,9 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start.http": "http-server",
+    "build.fontawesome": "rollup -c fontawesome.config.js",
+    "start.fontawesome": "rollup -w -c fontawesome.config.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@fortawesome/fontawesome-pro": "^6.0.0-beta1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.33-beta1",
+    "@rollup/plugin-node-resolve": "^13.0.4",
+    "http-server": "^13.0.1",
+    "rollup": "^2.56.2",
+    "rollup-plugin-terser": "^7.0.2"
+  }
 }
